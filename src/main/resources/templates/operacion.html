@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns: th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Operaciones</title>
+</head>
+<body>
+	<h1>Operaciones Matematicas</h1>
+
+	<form action="operacion" method="Post">
+		<select name="operacion">
+			<option>Sumar</option>
+			<option>Restar</option>
+			<option>Multiplicar</option>
+			<option>Dividir</option>
+		</select>
+		<section>
+			<label>Ingrese el primer numero</label> 
+			<input type="number" name="n1" placeholder="Digite un numero">
+		</section>
+
+		<section>
+			<label>Ingrese el segundo numero</label> 
+			<input type="number" name="n2" placeholder="Digite un numero">
+		</section>
+
+		<button>Resultado</button>
+
+	</form>
+
+	<h3 th:text="${respuesta}"></h3>
+
+</body>
+</html>
